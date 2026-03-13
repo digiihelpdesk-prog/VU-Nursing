@@ -95,10 +95,9 @@ cursor:pointer;
 }
 
 /* ───────── GRID LAYOUT ───────── */
-.grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:22px;
+.grid {
+  grid-template-columns: repeat(3, 1fr); /* change to: */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 /* ───────── FORM GROUP ───────── */
@@ -218,4 +217,15 @@ font-size:12px;
 padding:6px 8px;
 border:1px solid #e1e6f2;
 font-size:12px;
+
+}
+
+@media (max-width: 600px) {
+  body { padding: 12px; }
+  .container { padding: 20px; }
+  .grid { grid-template-columns: 1fr; }
+  .form-header { flex-direction: column; text-align: center; }
+  .university-info h1 { font-size: 18px; }
+  .submit-btn { width: 100%; }
+  .section-title { flex-direction: column; gap: 8px; }
 }
