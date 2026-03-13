@@ -231,15 +231,9 @@ font-size:12px;
 }
 
 @media (max-width: 768px) {
-  body { padding: 12px; }
-  .container { padding: 20px; }
-  .university-info h1 { font-size: 18px; }
-  .submit-btn { width: 100%; }
-}
-
-@media (max-width: 768px) {
   .grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); !important;
   }
 }
+
 
