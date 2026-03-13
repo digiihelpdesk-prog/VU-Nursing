@@ -237,3 +237,9 @@ font-size:12px;
   .submit-btn { width: 100%; }
 }
 
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
